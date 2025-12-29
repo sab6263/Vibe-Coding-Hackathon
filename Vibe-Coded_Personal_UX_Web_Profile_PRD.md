@@ -8,12 +8,7 @@
 
 ## Short Pitch
 
-Based on the hackathon guide provided, here are a few options for a Short Pitch you can use for your PRD tool.
-
-You can choose the one that best fits the specific "vibe" or focus of your project.
-Option 1: The Direct & Functional Pitch (Recommended)
-
-"A data-driven personal website and digital portfolio for a UX professional, built by customizing the 'Academic Pages' GitHub template. This web application transforms a standard academic layout into a personalized brand experience, featuring a fully accessible, tri-modal CV (text, visual, audio) and interactive project case studies. The goal is to deploy a live, professional digital presence using AI-assisted 'Vibe Coding' techniques.
+A data-driven personal website and digital portfolio for a UX professional, built by customizing the 'Academic Pages' GitHub template. This web application transforms a standard academic layout into a personalized brand experience, featuring a fully accessible, tri-modal CV (text, visual, audio) and interactive project case studies. The goal is to deploy a live, professional digital presence using AI-assisted 'Vibe Coding' techniques.
 
 ## Problem
 
@@ -26,7 +21,7 @@ Specific Pain Points:
 
 ## Solution
 
-The Solution: I will build a Data-Driven Personal Website hosted on GitHub Pages that transforms a standard academic template into a dynamic, "vibe-coded" digital product. This solution uses AI-assisted coding tools (like Cursor or Lovable) to rapidly deploy a site that is distinct, accessible, and interactive.
+The Solution: I will build a Data-Driven Personal Website that transforms a standard academic template into a dynamic, "vibe-coded" digital product.
 
 Key Features & Approach:
 - Personalized "Vibe" Theme: To solve the "generic identity" problem, I will implement a custom theme with unique background colors, icons, and fonts that reflect a personal UX brand. This includes a Personalized Hero Landing Page featuring a custom profile image, welcome message, and tagline.
@@ -50,7 +45,6 @@ Characteristics:
 Goals:
 - Build a compelling digital presence quickly
 - Showcase UX thinking and interaction skills
-- Experiment creatively with vibe coding
 
 Secondary Users: Visitors, Recruiters / Hiring Managers
 
@@ -60,10 +54,6 @@ Prefer scannable, interactive, memorable experiences
 Professors / Academic Evaluators
 Need structured academic content (papers, CV)
 Value clarity, rigor, and documentation
-
-Peers / Hackathon Jury
-Evaluate creativity, execution, and emotional impact
-Compare multiple projects quickly
 
 ## Use Cases
 
@@ -107,8 +97,6 @@ Navigates comfortably using keyboard or screen reader
 
 1. Core Website Infrastructure
 Static site generated from Academic Pages template. 
-GitHub repository linked to hackathon dashboard
-Automated deployment (e.g. GitHub Pages)
 
 2. Custom Theme Module
 Custom theme that reflects and my artsy personal UX brand
@@ -142,12 +130,6 @@ PDF report download
 
 ## Tech Overview
 
-Frontend
-Core Technologies
-HTML5 (semantic markup for accessibility and structure)
-CSS3 (layout, theming, animations, transitions)
-JavaScript (minimal, vanilla JavaScript only)
-
 Static Site Generator: Jekyll (Academic Pages)
 I am working on a Jekyll site (Academic Pages). Do not introduce new frameworks or JavaScript libraries. Modify only existing layouts, includes, Markdown, or CSS.
 
@@ -155,21 +137,6 @@ Critical Constraint:
 👉 Do not introduce new frameworks or external JavaScript libraries.
 👉 Modify only existing layouts, includes, Markdown files, configuration, or CSS.
 
-Technical Constraints & Design Implications
-
-Why this constraint exists:
-Maintains the integrity and stability of the Academic Pages theme
-Ensures compatibility with GitHub Pages (which has limited build support)
-Reduces cognitive and technical overhead during a time-boxed hackathon
-Keeps the system maintainable, transparent, and auditable for academic evaluation
-
-Implications for UI / UX Design:
-All interaction design must be achievable using:
-CSS animations and transitions
-Pseudo-classes (hover, focus, active)
-Progressive disclosure via CSS or minimal inline JavaScript
-Complex behaviors such as:
-Real-time data fetching
 Complex form handling
 User authentication
 Client-side state management are explicitly out of scope

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Baumann - UX Designer & Researcher creating meaningful digital experiences">
+    <meta name="author" content="Sarah Baumann">
+    <title>Sarah Baumann | UX Designer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sarah Baumann</a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- Theme Switcher -->
+                <div class="theme-switcher">
+                    <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle theme">
+                        <span class="current-theme-icon" id="current-theme-icon">
+                            <!-- Default Icon (Light) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="theme-options">
+                        <div class="theme-option active" data-theme="light" title="Light Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="5" />
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="theme-option" data-theme="dark" title="Dark Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="theme-option" data-theme="creative" title="Creative Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Sarah Baumann</h1>
+                    <p class="tagline">UX Designer & Creative Technologist</p>
+                    <p class="description">
+                        With roots in both design and technology, I enjoy working where creative and analytical thinking
+                        meet.
+                        I'm driven by collaboration across disciplines and bringing ideas from concept to reality.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="cv.html" class="btn btn-primary">
+                            <span>View CV</span>
+                        </a>
+                        <a href="projects.html" class="btn btn-secondary">
+                            <span>See Projects</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary"
+                            style="border-color: transparent; background: transparent; text-decoration: underline;">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-wrapper">
+                        <img src="Sarah-profil.JPG" alt="Sarah Baumann - UX Designer" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="subtitle">About Me</p>
+                <h2>Designing with Purpose</h2>
+            </div>
+
+            <!-- Narrative Grid -->
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <p>
+                        I'm a UX designer passionate about creating intuitive and accessible digital experiences.
+                        With a background in design thinking and user research, I bridge the gap between user needs
+                        and business goals.
+                    </p>
+                    <p>
+                        My approach combines empathy, creativity, and analytical thinking to deliver solutions
+                        that not only look beautiful but also solve real problems. I believe great design is
+                        invisible – it just works.
+                    </p>
+                    <p>
+                        When I'm not designing, you'll find me exploring new technologies, sketching ideas,
+                        or learning about the latest trends in human-computer interaction.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Toolkit Section -->
+            <div class="toolkit-section">
+                <div class="section-header" style="margin-top: 4rem;">
+                    <p class="subtitle">My Arsenal</p>
+                    <h3>The Toolkit</h3>
+                </div>
+                <div class="toolkit-grid">
+                    <!-- Toolkit Item 1: UX Design -->
+                    <div class="toolkit-item">
+                        <div class="toolkit-inner">
+                            <div class="toolkit-front">
+                                <div class="toolkit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <span>UX/UI Design</span>
+                            </div>
+                            <div class="toolkit-back">
+                                <p>Figma, Adobe XD, High-fidelity prototyping, Design Systems, Mobile & Web UI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 2: User Research -->
+                    <div class="toolkit-item">
+                        <div class="toolkit-inner">
+                            <div class="toolkit-front">
+                                <div class="toolkit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <span>User Research</span>
+                            </div>
+                            <div class="toolkit-back">
+                                <p>Expert Interviews, Usability Testing, Contextual Inquiry, Personas, User Journeys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 3: Creative Tech -->
+                    <div class="toolkit-item">
+                        <div class="toolkit-inner">
+                            <div class="toolkit-front">
+                                <div class="toolkit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                    </svg>
+                                </div>
+                                <span>Creative Tech</span>
+                            </div>
+                            <div class="toolkit-back">
+                                <p>HTML/CSS/JS, Creative Coding, Rapid Prototyping, P5.js, Interactivity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 4: Strategic Design -->
+                    <div class="toolkit-item">
+                        <div class="toolkit-inner">
+                            <div class="toolkit-front">
+                                <div class="toolkit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                    </svg>
+                                </div>
+                                <span>Strategic Design</span>
+                            </div>
+                            <div class="toolkit-back">
+                                <p>Design Thinking, Workshop Facilitation, Service Design, Lean UX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <p class="subtitle">Get in Touch</p>
+                    <h2>Let's Work Together</h2>
+                </div>
+                <p>
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:baumann.sarah@mail.de" class="contact-link">
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sarah Baumann. Designed with passion and purpose.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Theme Switcher
+        const themeOptions = document.querySelectorAll('.theme-option');
+        const currentThemeIcon = document.getElementById('current-theme-icon');
+        const html = document.documentElement;
+
+        // Theme icons SVG
+        const themeIcons = {
+            light: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>`,
+            dark: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                   </svg>`,
+            creative: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                           <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                       </svg>`
+        };
+
+        // Load saved theme or default to light
+        const savedTheme = localStorage.getItem('theme') || 'creative';
+        setTheme(savedTheme);
+
+        // Theme option click handlers
+        themeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const theme = option.getAttribute('data-theme');
+                setTheme(theme);
+                localStorage.setItem('theme', theme);
+            });
+        });
+
+        function setTheme(theme) {
+            // Update HTML data-theme attribute
+            html.setAttribute('data-theme', theme);
+
+            // Update current theme icon
+            if (currentThemeIcon) {
+                currentThemeIcon.innerHTML = themeIcons[theme];
+            }
+
+            // Update active state
+            themeOptions.forEach(opt => {
+                if (opt.getAttribute('data-theme') === theme) {
+                    opt.classList.add('active');
+                } else {
+                    opt.classList.remove('active');
+                }
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.getElementById('navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill cards
+        document.querySelectorAll('.skill-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Baumann - UX Designer CV and Resume">
+    <meta name="author" content="Sarah Baumann">
+    <title>CV | Sarah Baumann</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sarah Baumann</a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- Theme Switcher -->
+                <div class="theme-switcher">
+                    <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle theme">
+                        <span class="current-theme-icon" id="current-theme-icon">
+                            <!-- Default Icon (Light) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="theme-options">
+                        <div class="theme-option active" data-theme="light" title="Light Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="5" />
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="theme-option" data-theme="dark" title="Dark Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="theme-option" data-theme="creative" title="Creative Mode">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Hero Section -->
+    <section class="hero" style="min-height: 50vh; padding-top: 120px;">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <p class="subtitle">My Experience</p>
+                <h1>Curriculum Vitae</h1>
+                <p style="max-width: 600px; margin: 0 auto var(--spacing-md); color: var(--text-secondary);">
+                    With roots in both design and technology, I enjoy working where creative and analytical thinking
+                    meet.
+                    I'm driven by collaboration across disciplines and bringing ideas from concept to reality.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                    <a href="CV_Baumann.pdf" download class="btn btn-primary">
+                        <span>Download PDF CV</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                        </svg>
+                    </a>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                    Contact: <a href="mailto:baumann.sarah@mail.de"
+                        style="text-decoration: none; color: inherit;">baumann.sarah@mail.de</a>
+                </p>
+                <div class="cv-mode-switcher">
+                    <button class="mode-btn active" data-view="standard">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                        Standard
+                    </button>
+                    <button class="mode-btn" data-view="visual">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                        Visual
+                    </button>
+                    <button class="mode-btn" data-view="game">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        The Game
+                    </button>
+                    <button class="mode-btn" data-view="audio">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                            <line x1="12" y1="19" x2="12" y2="23" />
+                            <line x1="8" y1="23" x2="16" y2="23" />
+                        </svg>
+                        Audio CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main CV Content Container -->
+    <div class="cv-views-container">
+
+        <!-- MODE 1: STANDARD (TEXT-BASED) -->
+        <section id="cv-standard" class="cv-view active">
+            <!-- Experience Section -->
+            <div class="container" style="margin-top: var(--spacing-lg);">
+                <div class="section-header">
+                    <p class="subtitle">Professional Journey</p>
+                    <h2>Experience & Education</h2>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                    <div style="margin-bottom: 4rem;">
+                        <h3
+                            style="font-size: 1.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            Work Experience</h3>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">Working
+                                    Student in Marketing – Focus on Graphic Design</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">11/2023 – Present</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">Funkwerk
+                                Security Solutions GmbH</p>
+                            <p>Supporting marketing initiatives with a focus on graphic design and visual communication
+                                assets.</p>
+                        </div>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">Working
+                                    Student in Junior Project Management</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">08/2022 – 09/2023</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">KELLER &
+                                KOLLEGEN GmbH</p>
+                            <p>Assisted in project coordination and management tasks.</p>
+                        </div>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">Internship
+                                    in Junior Project Management and Online Editorial</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">03/2022 – 07/2022</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">KELLER &
+                                KOLLEGEN GmbH</p>
+                            <p>Gained practical experience in project management workflows and online content creation.
+                            </p>
+                        </div>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">Retail
+                                    Sales Experience</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">05/2018 – 11/2020</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">Lidl / Müller
+                            </p>
+                            <p>Developed customer service and organizational skills in a fast-paced retail environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-size: 1.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            Education</h3>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">M.A. User
+                                    Experience Design</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">04/2025 – Present</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">Technische
+                                Hochschule Ingolstadt</p>
+                        </div>
+                        <div style="margin-bottom: 3rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                <h4 style="color: var(--accent-color); font-size: 1.25rem; font-weight: 600;">B.Eng.
+                                    Media Engineering</h4>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem;">10/2020 – 03/2025</span>
+                            </div>
+                            <p style="color: var(--text-light); font-weight: 500; margin-bottom: 0.5rem;">TH Nürnberg
+                                Georg Simon Ohm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="container" style="margin-top: var(--spacing-xl);">
+                <div class="section-header">
+                    <p class="subtitle">Expertise</p>
+                    <h2>Skills & Competencies</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>UX Design</h3>
+                        <p>Creating user-centered interfaces with a focus on usability and empathy.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <circle cx="8.5" cy="8.5" r="1.5" />
+                                <polyline points="21 15 16 10 5 21" />
+                            </svg>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Visual communication, branding, and asset creation for marketing and digital products.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>Interdisciplinary teamwork, bridging the gap between design and technology.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <h3>Prototyping</h3>
+                        <p>Bringing ideas from concept to reality through rapid iteration and testing.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Basic knowledge of Java, SQL, and Front-end technologies to communicate with devs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h3>Languages</h3>
+                        <p>German (Native), English (B2+), Spanish (B1).</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MODE 2: VISUAL (Narrative Story) -->
+        <section id="cv-visual" class="cv-view">
+            <div class="container">
+                <div class="visual-narrative-container">
+                    <!-- Chapter 1 -->
+                    <div class="narrative-chapter">
+                        <div class="chapter-year">25</div>
+                        <div class="chapter-content">
+                            <div class="chapter-header">
+                                <h3 class="chapter-title">Mastering Human Experience</h3>
+                                <div class="chapter-org">TH Ingolstadt</div>
+                            </div>
+                            <p class="chapter-desc">
+                                Deep diving into User Experience Design. Focusing on the cognitive psychology behind
+                                interactions and building systems that bridge the gap between human intent and machine
+                                logic.
+                            </p>
+                            <div class="chapter-tags">
+                                <span class="chapter-tag">Psychology</span>
+                                <span class="chapter-tag">UX Research</span>
+                                <span class="chapter-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 2 -->
+                    <div class="narrative-chapter">
+
+                        <div class="chapter-year">23</div>
+                        <div class="chapter-content">
+                            <div class="chapter-header">
+                                <h3 class="chapter-title">Creative Integration</h3>
+                                <div class="chapter-org">Funkwerk Security Solutions</div>
+                            </div>
+                            <p class="chapter-desc">
+                                Leading visual communication and graphic design for high-security marketing initiatives.
+                                Translating complex technical requirements into compelling visual narratives.
+                            </p>
+                            <div class="chapter-tags">
+                                <span class="chapter-tag">Branding</span>
+                                <span class="chapter-tag">Visual Storytelling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 3 -->
+                    <div class="narrative-chapter">
+                        <div class="chapter-year">22</div>
+                        <div class="chapter-content">
+                            <div class="chapter-header">
+                                <h3 class="chapter-title">Strategic Coordination</h3>
+                                <div class="chapter-org">Keller & Kollegen</div>
+                            </div>
+                            <p class="chapter-desc">
+                                Balancing project management with editorial content creation. Developed a keen eye for
+                                detail and the ability to manage multi-disciplinary team workflows.
+                            </p>
+                            <div class="chapter-tags">
+                                <span class="chapter-tag">Management</span>
+                                <span class="chapter-tag">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 4 -->
+                    <div class="narrative-chapter">
+                        <div class="chapter-year">20</div>
+                        <div class="chapter-content">
+                            <div class="chapter-header">
+                                <h3 class="chapter-title">The Engineering Seed</h3>
+                                <div class="chapter-org">TH Nürnberg</div>
+                            </div>
+                            <p class="chapter-desc">
+                                Earning a B.Eng. in Media Engineering. A rigorous technical foundation that allows me to
+                                speak fluent "Developer" and understand the constraints of the digital medium.
+                            </p>
+                            <div class="chapter-tags">
+                                <span class="chapter-tag">Java</span>
+                                <span class="chapter-tag">SQL</span>
+                                <span class="chapter-tag">Logic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODE 3: THE GAME (Interactive Journey) -->
+        <section id="cv-game" class="cv-view">
+            <div class="container">
+                <div class="cv-game-container" id="game-viewport">
+                    <canvas id="cv-game-canvas"></canvas>
+                    <div class="game-hud">
+                        <div class="game-stats">Experience: <span id="game-xp">0</span>%</div>
+                        <div class="game-stats" id="game-objective">Objective: Find the Skill Orbs</div>
+                    </div>
+                    <div class="game-message" id="game-msg"></div>
+                    <div class="game-controls-hint">WASD / Arrows or Mouse to Move</div>
+                    <div class="game-overlay" id="game-start-overlay">
+                        <h2 style="color: white; margin-bottom: 1rem;">The Journey of Sarah</h2>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 500px;">
+                            Walk through Sarah's career journey. Collect the glowing "Insight Orbs" to unlock her skills
+                            and experience.
+                        </p>
+                        <button class="btn btn-primary" id="start-game-btn"
+                            style="padding: 1rem 2.5rem; font-size: 1.2rem;">
+                            Press to Start
+                        </button>
+                    </div>
+                    <div class="game-content-popup" id="game-popup">
+                        <button class="close-popup" id="close-game-popup">&times;</button>
+                        <h3 id="popup-title">Title</h3>
+                        <div id="popup-body">Content</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODE 4: AUDIO CV -->
+        <section id="cv-audio" class="cv-view">
+            <div class="container" style="max-width: 600px;">
+                <div class="audio-player-container">
+                    <div class="audio-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                            <line x1="12" y1="19" x2="12" y2="23" />
+                            <line x1="8" y1="23" x2="16" y2="23" />
+                        </svg>
+                        <h3>Audio CV</h3>
+                        <p>Listen to Sarah's professional journey</p>
+                    </div>
+
+                    <audio id="cv-audio-element" src="audio-cv.mp3"></audio>
+
+                    <div class="player-controls">
+                        <button id="play-pause-btn" class="player-btn">
+                            <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                            <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                style="display: none;">
+                                <rect x="6" y="4" width="4" height="16" />
+                                <rect x="14" y="4" width="4" height="16" />
+                            </svg>
+                        </button>
+
+                        <div class="progress-container">
+                            <div id="progress-bar" class="progress-bar"></div>
+                            <input type="range" id="seek-slider" class="seek-slider" value="0" step="0.1">
+                        </div>
+
+                        <div class="time-display">
+                            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                        </div>
+
+                        <div class="volume-container">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                            </svg>
+                            <input type="range" id="volume-slider" class="volume-slider" value="80" max="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sarah Baumann. Professional Portfolio.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Switcher Script -->
+    <script>
+        // Global Elements
+        const html = document.documentElement;
+        const modeBtns = document.querySelectorAll('.mode-btn');
+        const cvViews = document.querySelectorAll('.cv-view');
+
+        modeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const viewId = `cv-${btn.getAttribute('data-view')}`;
+
+                // Update buttons
+                modeBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update views
+                cvViews.forEach(view => {
+                    if (view.id === viewId) {
+                        view.classList.add('active');
+                        // Trigger game resize if game view is activated
+                        if (viewId === 'cv-game' && typeof resizeCanvas === 'function') {
+                            setTimeout(resizeCanvas, 50); // Slight delay to ensure DOM is rendered
+                        }
+                    } else {
+                        view.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // THE GAME LOGIC
+        const canvas = document.getElementById('cv-game-canvas');
+        const ctx = canvas.getContext('2d');
+        const startOverlay = document.getElementById('game-start-overlay');
+        const startBtn = document.getElementById('start-game-btn');
+        const xpSpan = document.getElementById('game-xp');
+        const objectiveText = document.getElementById('game-objective');
+        const gameMsg = document.getElementById('game-msg');
+        const gamePopup = document.getElementById('game-popup');
+        const popupTitle = document.getElementById('popup-title');
+        const popupBody = document.getElementById('popup-body');
+        const closePopupBtn = document.getElementById('close-game-popup');
+
+        let gameRunning = false;
+        let xp = 0;
+        const totalOrbs = 6;
+        let collectedCount = 0;
+
+        const player = {
+            x: 0,
+            y: 0,
+            size: 20,
+            speed: 4,
+            color: '#0ea5e9'
+        };
+
+        const keys = {
+            w: false, a: false, s: false, d: false,
+            ArrowUp: false, ArrowDown: false, ArrowLeft: false, ArrowRight: false
+        };
+
+        const orbs = [
+            {
+                x: 150, y: 150, type: 'foundation', color: '#8b5cf6', collected: false,
+                title: 'Academic Foundation',
+                text: 'Sarah started her journey in Media Engineering at TH Nürnberg, later pursuing a Master\'s in UX Design at TH Ingolstadt.'
+            },
+            {
+                x: 450, y: 100, type: 'experience', color: '#ec4899', collected: false,
+                title: 'Professional Path: Marketing',
+                text: 'Currently working at Funkwerk Security Solutions, focusing on graphic design and visual communication assets.'
+            },
+            {
+                x: 700, y: 300, type: 'skills', color: '#f59e0b', collected: false,
+                title: 'The Toolkit',
+                text: 'Proficient in Figma, Adobe Creative Cloud, and familiar with technical languages like Java and SQL.'
+            },
+            {
+                x: 200, y: 400, type: 'experience', color: '#ec4899', collected: false,
+                title: 'Management Skills',
+                text: 'Experience as a Working Student and Intern in Junior Project Management at KELLER & KOLLEGEN.'
+            },
+            {
+                x: 500, y: 450, type: 'foundation', color: '#8b5cf6', collected: false,
+                title: 'Core Philosophy',
+                text: 'Believing that great design bridges complexity and human needs, creating emotionally resonant interfaces.'
+            },
+            {
+                x: 750, y: 100, type: 'skills', color: '#f59e0b', collected: false,
+                title: 'Languages & More',
+                text: 'Native German speaker, English (B2+), and Spanish (B1). Always curious and learning.'
+            }
+        ];
+
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+
+            // Center player initially
+            if (!gameRunning && collectedCount === 0) {
+                player.x = canvas.width / 2;
+                player.y = canvas.height / 2;
+            }
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let targetX = null;
+        let targetY = null;
+
+        canvas.addEventListener('mousemove', e => {
+            if (gameRunning) {
+                const rect = canvas.getBoundingClientRect();
+                targetX = e.clientX - rect.left;
+                targetY = e.clientY - rect.top;
+            }
+        });
+
+        canvas.addEventListener('mousedown', e => {
+            if (gameRunning) {
+                const rect = canvas.getBoundingClientRect();
+                targetX = e.clientX - rect.left;
+                targetY = e.clientY - rect.top;
+            }
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            targetX = null;
+            targetY = null;
+        });
+
+        window.addEventListener('keydown', e => {
+            if (keys.hasOwnProperty(e.key)) {
+                if (gameRunning) e.preventDefault();
+                keys[e.key] = true;
+                targetX = null; // Keyboard takes priority or cancels mouse target
+            }
+        });
+        window.addEventListener('keyup', e => { if (keys.hasOwnProperty(e.key)) keys[e.key] = false; });
+
+        startBtn.addEventListener('click', () => {
+            startOverlay.classList.add('hidden');
+            resizeCanvas();
+            gameRunning = true;
+            // Reset player to center if not moved
+            if (player.x === 0 && player.y === 0) {
+                player.x = canvas.width / 2;
+                player.y = canvas.height / 2;
+            }
+            requestAnimationFrame(gameLoop);
+        });
+
+        closePopupBtn.addEventListener('click', () => {
+            gamePopup.style.display = 'none';
+            gameRunning = true;
+            requestAnimationFrame(gameLoop);
+        });
+
+        function showPopup(orb) {
+            gameRunning = false;
+            popupTitle.textContent = orb.title;
+            popupBody.innerHTML = `<p>${orb.text}</p>`;
+            gamePopup.style.display = 'block';
+        }
+
+        function showMessage(text) {
+            gameMsg.textContent = text;
+            gameMsg.style.display = 'block';
+            setTimeout(() => { gameMsg.style.display = 'none'; }, 3000);
+        }
+
+        function update() {
+            if (!gameRunning) return;
+
+            // Move player via Mouse/Touch
+            if (targetX !== null && targetY !== null) {
+                const dx = targetX - player.x;
+                const dy = targetY - player.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist > 5) { // Deadzone to avoid jitter
+                    player.x += (dx / dist) * player.speed;
+                    player.y += (dy / dist) * player.speed;
+                }
+            }
+
+            // Move player via Keyboard
+            if (keys.w || keys.ArrowUp) player.y -= player.speed;
+            if (keys.s || keys.ArrowDown) player.y += player.speed;
+            if (keys.a || keys.ArrowLeft) player.x -= player.speed;
+            if (keys.d || keys.ArrowRight) player.x += player.speed;
+
+            // Boundaries
+            player.x = Math.max(player.size, Math.min(canvas.width - player.size, player.x));
+            player.y = Math.max(player.size, Math.min(canvas.height - player.size, player.y));
+
+            // Collision check with orbs
+            orbs.forEach(orb => {
+                if (!orb.collected) {
+                    const dx = player.x - orb.x;
+                    const dy = player.y - orb.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < player.size + 15) {
+                        orb.collected = true;
+                        collectedCount++;
+                        xp = Math.floor((collectedCount / totalOrbs) * 100);
+                        xpSpan.textContent = xp;
+
+                        showPopup(orb);
+
+                        if (collectedCount === totalOrbs) {
+                            objectiveText.textContent = "Objective: Mission Accomplished!";
+                            showMessage("All insights collected! You've mastered Sarah's journey.");
+                        } else {
+                            objectiveText.textContent = `Objective: Find more Skill Orbs (${collectedCount}/${totalOrbs})`;
+                        }
+                    }
+                }
+            });
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Background Grid
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = 1;
+            const gridSize = 50;
+            for (let x = 0; x <= canvas.width; x += gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+                ctx.stroke();
+            }
+            for (let y = 0; y <= canvas.height; y += gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+                ctx.stroke();
+            }
+
+            // Draw Orbs
+            orbs.forEach(orb => {
+                if (!orb.collected) {
+                    // Glow effect
+                    const gradient = ctx.createRadialGradient(orb.x, orb.y, 5, orb.x, orb.y, 20);
+                    gradient.addColorStop(0, orb.color);
+                    gradient.addColorStop(1, 'transparent');
+
+                    ctx.fillStyle = gradient;
+                    ctx.beginPath();
+                    ctx.arc(orb.x, orb.y, 20, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // Core
+                    ctx.fillStyle = '#fff';
+                    ctx.beginPath();
+                    ctx.arc(orb.x, orb.y, 6, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            });
+
+            // Draw Player
+            ctx.fillStyle = player.color;
+            ctx.shadowBlur = 15;
+            ctx.shadowColor = player.color;
+            ctx.beginPath();
+            ctx.arc(player.x, player.y, player.size, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+
+            // Player Eye
+            ctx.fillStyle = '#fff';
+            ctx.beginPath();
+            ctx.arc(player.x + 5, player.y - 5, 4, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        function gameLoop() {
+            update();
+            draw();
+            if (gameRunning) {
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+
+        // Audio Player Logic
+        const audio = document.getElementById('cv-audio-element');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const seekSlider = document.getElementById('seek-slider');
+        const progressBar = document.getElementById('progress-bar');
+        const currentTimeSpan = document.getElementById('current-time');
+        const durationSpan = document.getElementById('duration');
+        const volumeSlider = document.getElementById('volume-slider');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            } else {
+                audio.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            seekSlider.value = audio.currentTime;
+            progressBar.style.width = `${progress}%`;
+            currentTimeSpan.textContent = formatTime(audio.currentTime);
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            seekSlider.max = audio.duration;
+            durationSpan.textContent = formatTime(audio.duration);
+        });
+
+        seekSlider.addEventListener('input', () => {
+            audio.currentTime = seekSlider.value;
+        });
+
+        volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value / 100;
+        });
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
+        // Pause audio when switching views
+        modeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.getAttribute('data-view') !== 'audio') {
+                    audio.pause();
+                    playIcon.style.display = 'block';
+                    pauseIcon.style.display = 'none';
+                }
+            });
+        });
+
+        // Theme Switcher Logic
+        const themeOptions = document.querySelectorAll('.theme-option');
+        const currentThemeIcon = document.getElementById('current-theme-icon');
+
+        const themeIcons = {
+            light: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`,
+            dark: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`,
+            creative: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`
+        };
+
+        const savedTheme = localStorage.getItem('theme') || 'creative';
+        setTheme(savedTheme);
+
+        themeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const theme = option.getAttribute('data-theme');
+                setTheme(theme);
+                localStorage.setItem('theme', theme);
+            });
+        });
+
+        function setTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            if (currentThemeIcon) currentThemeIcon.innerHTML = themeIcons[theme];
+            themeOptions.forEach(opt => {
+                opt.classList.toggle('active', opt.getAttribute('data-theme') === theme);
+            });
+        }
+    </script>
+</body>
+
+</html>

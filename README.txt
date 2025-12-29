@@ -1,1 +1,0 @@
-This is the vibe coding hackathon project of Sarah Baumann.
